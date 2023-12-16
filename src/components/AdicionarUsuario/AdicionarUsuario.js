@@ -5,7 +5,7 @@ import './AdicionarUsuario.css'
 
 
 
-function AdicionarUsuario(props){
+function AdicionarUsuario(){
   /*
     um hook funcciona como um array de duas posições 
     onde a primeira é uma variavel e a segunda e a função que manipula ela  
@@ -41,7 +41,7 @@ const onSubmitHandler = (event)=> {
         setNome('') 
         setSobreNome('')
         setEmail('')
-        props.adicionarUsuario(dados)
+        
     })
 
 
