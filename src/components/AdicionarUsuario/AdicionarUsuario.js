@@ -36,17 +36,15 @@ const onSubmitHandler = (event)=> {
         body: JSON.stringify(usuario)
       }
     )
-    .then(resposta=>resposta.json())
-    .then(dados=>{
+    .then(resposta=>{
+       if(resposta.ok){
         setNome('') 
         setSobreNome('')
         setEmail('')
-        
+        alert('Usuario cadastrado com sucesso')
+         
+       }
     })
-
-
-
-   
   }
     return (
       <div className="AdicionarUsuario">

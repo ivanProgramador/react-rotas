@@ -5,6 +5,7 @@ import {BrowserRouter as Router,NavLink,Switch,Route} from 'react-router-dom'
 import Usuarios from './components/Usuarios/Usuarios'
 import AdicionarUsuario from './components/AdicionarUsuario/AdicionarUsuario';
 import Home from './components/Home/Home';
+import DetalheUsuario from './components/Detalhe/DetalheUsuario';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
             <Route path='/Adicionar'>
                <AdicionarUsuario/>
+            </Route>
+
+            <Route path='/usuario/:codigo'>
+               <DetalheUsuario/>
             </Route>
 
            
